@@ -32,6 +32,7 @@ jobs:
 
       - name: Build debug APK
         run: gradle assembleDebug --stacktrace
+        working-directory: YamahaLocalControl
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
